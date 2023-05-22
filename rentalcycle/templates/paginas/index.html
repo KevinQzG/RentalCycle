@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/img/icon.png" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      typo="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <title>RentalCycle</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-hero">
+        <div class="container hero">
+          <div class="customer-support">
+            <i class="fa-solid fa-headset"></i>
+            <div class="content-customer-support">
+              <span class="text">Soporte al cliente</span>
+              <span class="number">(+57) 300 545 9328</span>
+            </div>
+          </div>
+
+          <div class="container-logo">
+            <i class="fa-sharp fa-solid fa-person-biking"></i>
+            <h1 class="logo"><a href="/">Rental Cycle</a></h1>
+            <i class="fa-sharp fa-solid fa-person-biking"></i>
+          </div>
+
+          <div class="container-user">
+            <a href="{% url 'admin:index' %}"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-basket-shopping"></i>
+            <div class="content-shopping-cart">
+              <span class="text">Carrito</span>
+              <span class="number">(0)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-navbar">
+        <nav class="navbar container">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="menu">
+            <li><a href="#index">Inicio</a></li>
+            <li><a href="#container top-products">Servicios</a></li>
+            <li><a href="#container blogs">Blog</a></li>
+          </ul>
+
+          <form class="search-form">
+            <input type="search" placeholder="Buscar..." />
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="content-banner">
+        <p>Alquiler de</p>
+        <h2>Bicicletas <br />En tu U</h2>
+        <a href="#">Alquilar ahora</a>
+      </div>
+    </section>
+
+    <main class="main-content">
+      <section class="container container-features">
+        <div class="card-feature">
+          <i class="fa-solid fa-face-smile-wink"></i>
+          <div class="feature-content">
+            <span>Confortabilidad</span>
+            <p>Bicicletas en perfecto estado</p>
+          </div>
+        </div>
+        <div class="card-feature">
+          <i class="fa-solid fa-wallet"></i>
+          <div class="feature-content">
+            <span>Tranquilidad</span>
+            <p>Pago 100% seguro</p>
+          </div>
+        </div>
+        <div class="card-feature">
+          <i class="fa-solid fa-gift"></i>
+          <div class="feature-content">
+            <span>Bono regalo</span>
+            <p>Puedes regalar un bono de alquiler</p>
+          </div>
+        </div>
+        <div class="card-feature">
+          <i class="fa-solid fa-headset"></i>
+          <div class="feature-content">
+            <span>Servicio al cliente 24/7</span>
+            <p>LLámenos 24/7 al (+57) 300 545 9328</p>
+          </div>
+        </div>
+      </section>
+
+    
+
+      <section class="container top-products" id="container top-products">
+        <h1 class="heading-1">Bicicletas más solicitadas por hora</h1>
+
+        <div class="container-options">
+          <span class="active">Destacados</span>
+          <span>Más recientes</span>
+          <span>Mejor descuento</span>
+        </div>
+
+        <div class="container-products">
+          <!-- Producto 1 -->
+          <div class="card-product">
+            <div class="container-img">
+              <img src="/static/img/basica.png" alt="Bicicleta básica" />
+              <span class="discount">-13%</span>
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Bicicleta Auxiliar</h3>
+              <span class="add-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </span>
+              <p class="price">$4.000 <span>$5.500</span></p>
+            </div>
+          </div>
+          <!-- Producto 2 -->
+          <div class="card-product">
+            <div class="container-img">
+              <img src="/static/img/bmx.jpeg" alt="BMX" />
+              <span class="discount">-22%</span>
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Bicicleta BMX</h3>
+              <span class="add-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </span>
+              <p class="price">$6.500 <span>$8.500</span></p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card-product">
+            <div class="container-img">
+              <img src="/static/img/electrica.png" alt="Bicicleta Eléctrica" />
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>Bicicleta Eléctrica</h3>
+              <span class="add-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </span>
+              <p class="price">$9.200</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="card-product">
+            <div class="container-img">
+              <img src="static/img/todoterreno.png" alt="Bicicleta Todoterreno" />
+              <div class="button-group">
+                <span>
+                  <i class="fa-regular fa-eye"></i>
+                </span>
+                <span>
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-code-compare"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-card-product">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <h3>Bicicleta Todoterreno</h3>
+              <span class="add-cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </span>
+              <p class="price">$8.600</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blogs -->
+
+      <section class="container blogs" id="container blogs">
+        <h1 class="heading-1">Últimos Blogs</h1>
+
+        <div class="container-blogs">
+          <div class="card-blog">
+            <div class="container-img">
+              <img src="/static/img/blog-1.jpeg" alt="Blog 1" />
+              <div class="button-group-blog">
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-link"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-blog">
+              <h3>Lorem, ipsum dolor sit</h3>
+              <span>12 Mayo 2023</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                molestiae! Ratione et, dolore ipsum quaerat iure illum
+                reprehenderit non maxime amet dolor voluptas facilis corporis,
+                consequatur eius est sunt suscipit?
+              </p>
+              <div class="btn-read-more">Leer más</div>
+            </div>
+          </div>
+          <div class="card-blog">
+            <div class="container-img">
+              <img src="/static/img/blog-2.jpeg" alt="Imagen Blog 2" />
+              <div class="button-group-blog">
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-link"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-blog">
+              <h3>Lorem, ipsum dolor sit</h3>
+              <span>15 Mayo 2023</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                molestiae! Ratione et, dolore ipsum quaerat iure illum
+                reprehenderit non maxime amet dolor voluptas facilis corporis,
+                consequatur eius est sunt suscipit?
+              </p>
+              <div class="btn-read-more">Leer más</div>
+            </div>
+          </div>
+          <div class="card-blog">
+            <div class="container-img">
+              <img src="/static/img/blog-3.jpeg" alt="Imagen Blog 3" />
+              <div class="button-group-blog">
+                <span>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <span>
+                  <i class="fa-solid fa-link"></i>
+                </span>
+              </div>
+            </div>
+            <div class="content-blog">
+              <h3>Lorem, ipsum dolor sit</h3>
+              <span>19 Mayo 2023</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                molestiae! Ratione et, dolore ipsum quaerat iure illum
+                reprehenderit non maxime amet dolor voluptas facilis corporis,
+                consequatur eius est sunt suscipit?
+              </p>
+              <div class="btn-read-more">Leer más</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="menu-footer">
+          <div class="contact-info">
+            <p class="title-footer">Información de Contacto</p>
+            <ul>
+              <li>Dirección: Cl. 7 Sur #50 Medellín</li>
+              <li>Teléfono: (+57) 300 545 9328</li>
+              <li>Email: rentalcycle@eafit.edu.co</li>
+            </ul>
+            <div class="social-icons">
+              <span class="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+              <span class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </span>
+              <span class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span class="pinterest">
+                <i class="fa-brands fa-pinterest-p"></i>
+              </span>
+              <span class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="information">
+            <p class="title-footer">Información</p>
+            <ul>
+              <li><a href="#">Acerca de Nosotros</a></li>
+              <li><a href="#">Politicas de Privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Contactános</a></li>
+            </ul>
+          </div>
+
+          <div class="my-account">
+            <p class="title-footer">Mi cuenta</p>
+
+            <ul>
+              <li><a href="#">Mi cuenta</a></li>
+              <li><a href="#">Historial de alquileres</a></li>
+              <li><a href="#">Boletín</a></li>
+              <li><a href="#">Reembolsos</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <p class="title-footer">Boletín informativo</p>
+
+            <div class="content">
+              <p>
+                Suscríbete a nuestros boletines ahora y mantente al día con ofertas exclusivas.
+              </p>
+              <input type="email" placeholder="Ingresa el correo aquí..." />
+              <button>Suscríbete</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Desarrollado por </br> Kevin Quiroz y Evelyn Zapata &copy; </br> 2023</p>
+          <img src="/static/img/pagos.png" alt="Metodos de pago" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/81581fb069.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
