@@ -35,3 +35,12 @@ El proyecto RentalCycle utiliza las siguientes tecnologías:
 - Control de versiones: Git para el control de versiones del código fuente.
 - Despliegue: El proyecto está alojado en GitHub y se puede desplegar en un servidor en la nube.
 
+### Anexos
+
+![Anexo 1](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE1.png)
+![Anexo 2](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE2.png)
+![Anexo 3](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE3.png)
+![Anexo 4](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE4.png)
+![Anexo 5](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE5.png)
+![Anexo 6](https://raw.githubusercontent.com/KevinQzG/RentalCycle/master/CYCLE6.png)
+
